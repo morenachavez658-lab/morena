@@ -6,7 +6,7 @@
 //método asignar(). Crear los objetos y casos de prueba necesarios para comprobar el correcto funcionamiento
 //de la jerarquía.
 
-    /* PERSONA */
+   
     function Persona(nombre, edad, genero){
         this.nombre = nombre;
         this.edad = edad;
@@ -17,7 +17,6 @@
         console.log(`Nombre: ${this.nombre}, Edad: ${this.edad}, Genero: ${this.genero}`);
     };
 
-     /* ESTUDIANTE */
     function Estudiante(nombre, edad, genero, curso, grupo){
         Persona.call(this, nombre, edad, genero);
         this.curso = curso;
@@ -31,7 +30,6 @@
         console.log(`${this.nombre} ha sido registrado en el curso ${this.curso} y grupo: ${this.grupo}`);
     }
 
-      /* PROFESOR */
     function Profesor(nombre, edad, genero, asignatura, nivel){
         Persona.call(this, nombre, edad, genero);
         this.asignatura = asignatura;

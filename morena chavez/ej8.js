@@ -3,9 +3,9 @@
 //ejemplo de palíndromo complejo: "La ruta nos aporto otro paso natural".
 
 var texto = prompt("pone un texto aña");
-var manzana=texto.replaceAll(""," ").toLowerCase();
-var frutilla=manzana.split("").reverse().join("");
-if(texto==frutilla){
+var limpio=texto.replaceAll(""," ").toLowerCase();
+var invertido=limpio.split("").reverse().join("");
+if(texto==invertido){
     console.log("es un palindromo")
 }
 else {
